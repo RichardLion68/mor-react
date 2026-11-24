@@ -1,0 +1,17 @@
+# dependencies and build output
+node_modules/
+dist/
+
+# editor / tool state
+.DS_Store
+.claude/
+
+# scratch output from the comparison tools (tools/diff-compare.py writes these into the project root)
+diff-*.json
+
+# The game's media lives next to the app, not in it. public/Pics, Sounds, Fonts and Mods are symlinks to ../../<same name>
+# (recreate with: cd public && for d in Pics Sounds Fonts Mods; do ln -sfn ../../$d $d; done)
+/public/Pics
+/public/Sounds
+/public/Fonts
+/public/Mods
